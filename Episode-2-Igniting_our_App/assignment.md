@@ -106,6 +106,14 @@
 
 ---
 
+## Run
+
+- Run the project using
+
+```bash
+npx parcel index.html
+```
+
 ## 🏗 Build
 
 - Build a production version using:
