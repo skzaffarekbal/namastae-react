@@ -106,7 +106,7 @@
 
 ---
 
-## Run
+## 🏃 Run
 
 - Run the project using
 
