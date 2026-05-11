@@ -1,0 +1,28 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste React concept",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skzaffarekbal/namastae-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "zaff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skzaffarekbal/namastae-react/issues"
+  },
+  "homepage": "https://github.com/skzaffarekbal/namastae-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  }
+}
