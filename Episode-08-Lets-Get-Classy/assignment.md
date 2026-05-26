@@ -80,3 +80,45 @@ For example, in Repo class, during `componentDidMount()` a timer is set with an 
 
 ## Q: (Research) Why can't we have the `callback function` of `useEffect async`?
 A: `useEffect` expects it's callback function to return nothing or return a function (cleanup function that is called when the component is unmounted). If we make the callback function as `async`, it will return a `promise` and the promise will affect the clean-up function from being called.
+
+## Q: What is the structure of rendering?
+```bash
+<Parent>
+   <Child />
+</Parent>
+```
+
+React Lifecycle Execution Order
+```text
+→ Parent Constructor
+→ Parent Render
+→ Child Constructor
+→ Child Render
+→ Child componentDidMount
+→ Parent componentDidMount 
+```
+
+## Q: What is the structure of rendering?
+```bash
+<Parent>
+   <ChildOne />
+   <ChildTwo />
+</Parent>
+```
+
+React Lifecycle Execution Order
+```text
+→ Parent Constructor
+→ Parent Render
+
+→ ChildOne Constructor
+→ ChildOne Render
+
+→ ChildTwo Constructor
+→ ChildTwo Render
+
+→ ChildOne componentDidMount
+→ ChildTwo componentDidMount
+
+→ Parent componentDidMount
+```
